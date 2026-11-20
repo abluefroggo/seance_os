@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://bp1nhk531idad"]
+
+[node name="GamePlayScreen" type="Control" unique_id=52822401]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 960.0
+offset_bottom = 720.0
+
+[node name="MainVBox" type="VBoxContainer" parent="." unique_id=2139536131]
+layout_mode = 0
+offset_right = 960.0
+offset_bottom = 720.0
+
+[node name="TopHUD" type="HBoxContainer" parent="MainVBox" unique_id=42785249]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+
+[node name="PhantomNameLabel" type="Label" parent="MainVBox/TopHUD" unique_id=980177645]
+custom_minimum_size = Vector2(220, 220)
+custom_maximum_size = Vector2(-1, 720)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 30
+
+[node name="AffectionBar" type="ProgressBar" parent="MainVBox/TopHUD" unique_id=614910436]
+custom_minimum_size = Vector2(140, 24)
+layout_mode = 2
+
+[node name="EscapeMeter" type="ProgressBar" parent="MainVBox/TopHUD" unique_id=1941247070]
+custom_minimum_size = Vector2(140, 24)
+layout_mode = 2
+
+[node name="StageArea" type="CenterContainer" parent="MainVBox" unique_id=805439080]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PhantomPortrait" type="TextureRect" parent="MainVBox/StageArea" unique_id=616833637]
+custom_minimum_size = Vector2(220, 220)
+layout_mode = 2
+
+[node name="DialoguePanel" type="PanelContainer" parent="MainVBox" unique_id=1295736628]
+custom_minimum_size = Vector2(920, 0)
+custom_maximum_size = Vector2(940, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainVBox/DialoguePanel" unique_id=877757485]
+layout_mode = 2
+
+[node name="SpeakerLabel" type="Label" parent="MainVBox/DialoguePanel/VBoxContainer" unique_id=1718291699]
+custom_minimum_size = Vector2(0, 22)
+layout_mode = 2
+
+[node name="DialogueText" type="RichTextLabel" parent="MainVBox/DialoguePanel/VBoxContainer" unique_id=331559879]
+custom_minimum_size = Vector2(0, 85)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ChoicesBox" type="VBoxContainer" parent="MainVBox/DialoguePanel/VBoxContainer" unique_id=1115755332]
+layout_mode = 2
