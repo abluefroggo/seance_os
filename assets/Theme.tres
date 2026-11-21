@@ -1,0 +1,6 @@
+[gd_resource type="Theme" format=3 uid="uid://dd04n2nnoqhld"]
+
+[ext_resource type="FontFile" uid="uid://be2dqpivcjidq" path="res://assets/fonts/Redaction50-Regular.ttf" id="1_hbvho"]
+
+[resource]
+default_font = ExtResource("1_hbvho")

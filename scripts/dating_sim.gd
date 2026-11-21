@@ -8,6 +8,8 @@ extends Control
 @onready var dialogue_text: RichTextLabel = $MainVBox/DialoguePanel/VBoxContainer/DialogueText
 @onready var choices_box: VBoxContainer = $MainVBox/DialoguePanel/VBoxContainer/ChoicesBox
 
+var Redaction50 = load("res://assets/fonts/Redaction50-Regular.ttf")
+
 var affection: int = 50
 var escape: int = 20
 var current_node_id: String = "start"
@@ -93,8 +95,11 @@ var dialogue: Dictionary = {
 		]
 		
 	}
+	
 }
 func _ready() -> void:
+	dialogue_text.add_theme_font_override("normal_font", Redaction50)
+
 	phantom_name_label.text = "PHANTOM // PID-0001"
 	dialogue_text.bbcode_enabled = true
 	affection_bar.min_value = 0
