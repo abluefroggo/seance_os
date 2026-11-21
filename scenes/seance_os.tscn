@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ctmkyx5pe6fy2"]
 
 [ext_resource type="Script" uid="uid://cy8lnsj2m6ol8" path="res://scripts/dating_sim.gd" id="1_71hwj"]
+[ext_resource type="Script" uid="uid://71l658w8vbmh" path="res://scripts/scene_switcher.gd" id="1_mvb26"]
 [ext_resource type="Shader" uid="uid://cplyqxen8d65t" path="res://assets/crt.gdshader" id="2_daich"]
 [ext_resource type="PackedScene" uid="uid://bkjm54rkd34a3" path="res://scenes/main_menu.tscn" id="3_dvv5m"]
 [ext_resource type="PackedScene" uid="uid://byod2co65fmot" path="res://scenes/boot_sequence.tscn" id="4_mvb26"]
@@ -20,20 +21,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_71hwj")
+script = ExtResource("1_mvb26")
 
 [node name="DesktopBG" type="ColorRect" parent="." unique_id=1632860942]
 layout_mode = 0
 offset_right = 960.0
 offset_bottom = 720.0
 color = Color(0.07931692, 0.07049898, 0.013477976, 1)
-
-[node name="GlitchOverlay" type="ColorRect" parent="." unique_id=1555256225]
-material = SubResource("ShaderMaterial_hcxmm")
-layout_mode = 0
-offset_right = 960.0
-offset_bottom = 720.0
-mouse_filter = 2
 
 [node name="MainMenu" parent="." unique_id=2010917317 instance=ExtResource("3_dvv5m")]
 layout_mode = 0
@@ -43,3 +37,11 @@ layout_mode = 0
 
 [node name="GamePlayScreen" parent="." unique_id=52822401 instance=ExtResource("5_7fkjn")]
 layout_mode = 0
+script = ExtResource("1_71hwj")
+
+[node name="GlitchOverlay" type="ColorRect" parent="." unique_id=1555256225]
+material = SubResource("ShaderMaterial_hcxmm")
+layout_mode = 0
+offset_right = 960.0
+offset_bottom = 720.0
+mouse_filter = 2

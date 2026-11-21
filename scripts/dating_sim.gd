@@ -1,12 +1,12 @@
 extends Control
 
-@onready var phantom_name_label: Label = $GamePlayScreen/MainVBox/TopHUD/PhantomNameLabel
-@onready var affection_bar: ProgressBar = $GamePlayScreen/MainVBox/TopHUD/AffectionBar
-@onready var escape_meter: ProgressBar = $GamePlayScreen/MainVBox/TopHUD/EscapeMeter
-@onready var portrait: TextureRect = $GamePlayScreen/MainVBox/StageArea/PhantomPortrait
-@onready var speaker_label: Label = $GamePlayScreen/MainVBox/DialoguePanel/VBoxContainer/SpeakerLabel
-@onready var dialogue_text: RichTextLabel = $GamePlayScreen/MainVBox/DialoguePanel/VBoxContainer/DialogueText
-@onready var choices_box: VBoxContainer = $GamePlayScreen/MainVBox/DialoguePanel/VBoxContainer/ChoicesBox
+@onready var phantom_name_label: Label = $MainVBox/TopHUD/PhantomNameLabel
+@onready var affection_bar: ProgressBar = $MainVBox/TopHUD/AffectionBar
+@onready var escape_meter: ProgressBar = $MainVBox/TopHUD/EscapeMeter
+@onready var portrait: TextureRect = $MainVBox/StageArea/PhantomPortrait
+@onready var speaker_label: Label = $MainVBox/DialoguePanel/VBoxContainer/SpeakerLabel
+@onready var dialogue_text: RichTextLabel = $MainVBox/DialoguePanel/VBoxContainer/DialogueText
+@onready var choices_box: VBoxContainer = $MainVBox/DialoguePanel/VBoxContainer/ChoicesBox
 
 var affection: int = 50
 var escape: int = 20
